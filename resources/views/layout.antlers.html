@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <meta name="viewport" content="">
+        <meta name="description" content="Madu solusi kualitas hidup anda. Baik untuk kesehatan dan meningkatkan daya tahan tubuh!">
+        <title>{{ title ?? site:name }} | Madu Murni Asli Sulawesi</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Cookie&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        {{ vite src="resources/js/site.js|resources/css/site.css" }}
+    </head>
+    <body>
+
+        <!-- START: Header -->
+        <header class="container">
+            <div class="flex justify-between items-center py-9">
+                <a href="" class="block w-1/6">
+                    <img
+                        src="/assets/logo-lontara-bg-full-transparant.png"
+                        alt="logo"
+                        class="w-36">
+                </a>
+
+                <nav class="flex flex-grow justify-center gap-12">
+                    <a href="" class="text-sm font-medium hover:text-primary transition underline text-primary">Home</a>
+                    <a href="" class="text-sm font-medium hover:text-primary transition">About Us</a>
+                    <a href="" class="text-sm font-medium hover:text-primary transition">Honey</a>
+                    <a href="" class="text-sm font-medium hover:text-primary transition">Page</a>
+                    <a href="" class="text-sm font-medium hover:text-primary transition">Blog</a>
+                    <a href="" class="text-sm font-medium hover:text-primary transition">Contact Us</a>
+                </nav>
+
+                <section class="flex justify-end gap-6 w-1/6">
+                    <a href="" class="block">
+                        <i data-lucide="search" class="text-sm"></i>
+                    </a>
+                    <a href="" class="block">
+                        <img src="/assets/whatsapp.svg" alt="whatsapp logo" class="w-[1.35rem] h-[1.35rem] object-contain">
+                    </a>
+                </section>
+            </div>
+        </header>
+        <!-- END: Header -->
+
+
+        <!-- START: Template Content -->
+        {{ template_content }}
+        <!-- END: Template Content -->
+
+
+        <!-- START: Footer -->
+        <!-- END: Template Content -->
+
+
+        <!-- START: Script -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script>
+            lucide.createIcons();
+        </script>
+        <!-- END: Script -->
+    </body>
+</html>

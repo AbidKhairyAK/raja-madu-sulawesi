@@ -1,0 +1,9 @@
+title: Categories
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
+    refresh: true
+template: product/category/index
+term_template: product/category/show
+layout: layout

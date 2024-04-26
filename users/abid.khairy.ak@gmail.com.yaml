@@ -1,0 +1,17 @@
+super: true
+name: 'Muhammad Abid Khairy'
+id: d878e840-8662-4647-8a41-2c1dc449db4e
+password_hash: $2y$10$nB.Olk.E2IZPXLDqonsr6e9R0LpiIVYqdirzd4FqBvmtW9TDPxOGq
+preferences:
+  collections:
+    product:
+      columns:
+        - title
+        - categories
+        - price
+        - product_image
+        - status
+  favorites:
+    -
+      name: 'Homepage Settings'
+      url: collections/pages/entries/home

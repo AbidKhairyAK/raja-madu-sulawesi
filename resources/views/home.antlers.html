@@ -1,0 +1,75 @@
+<!-- START: Misc Images -->
+<section>
+    <img
+        src="/assets/banner-honey-drip.png"
+        alt="honey-drip"
+        class="absolute top-0 left-0 w-[15%]">
+    <img
+        src="/assets/banner-honey-stick.png"
+        alt="honey-stick"
+        class="absolute left-0 top-[5rem] w-[15%]">
+</section>
+<!-- END: Misc Images -->
+
+<!-- START: Main Banner -->
+<div class="h-[calc(100vh-6.9rem)] align-middle flex flex-col justify-center">
+    <div class="container flex items-center justify-between">
+        <section class="max-w-[45%] w-full">
+            <h2 class="font-serif font-bold text-primary text-4xl mb-2">
+                {{ subtitle }}
+            </h2>
+            <h1 class="font-semibold text-5xl mb-5 leading-tight">
+                {{ title }}
+            </h1>
+            <h2 class="text-black/75 mb-8">
+                {{ caption }}
+            </h2>
+
+            <div class="flex gap-4">
+                <button class="btn btn-primary shadow px-6">
+                    BELI SEKARANG
+                </button>
+                <button class="btn shadow px-6">
+                    MENGAPA BELI MADU KAMI?
+                </button>
+            </div>
+        </section>
+
+        <img
+            src="/assets/banner-main-product-with-label.jpg"
+            alt="banner-main-product"
+            class="w-[55%] transform translate-x-8">
+    </div>
+</div>
+<!-- END: Main Banner -->
+
+<!-- START: Jenis Madu -->
+<div class="container py-16">
+    {{ partial:section_title label="Jenis Madu" }}
+
+    <section class="flex justify-around">
+        {{ taxonomy:categories }}
+            <figure>
+                <div class="w-72 h-72 bg-neutral-200 rounded-full overflow-hidden p-2">
+                    <img
+                        src="{{ category_image }}"
+                        alt="{{ category_image:alt }}"
+                        class="w-full h-full object-contain">
+                </div>
+                <figcaption class="text-center text-lg mt-6">
+                    {{ title }}
+                </figcaption>
+                <a href="" class="underline text-xs text-center block mt-2">
+                    Selengkapnya >
+                </a>
+            </figure>
+        {{ /taxonomy:categories }}
+    </section>
+</div>
+<!-- END: Jenis Madu -->
+
+<!-- START: Daftar Produk -->
+<!-- END: Daftar Produk -->
+
+<!-- START: Pak Jokowi -->
+<!-- END: Pak Jokowi -->
