@@ -16,6 +16,7 @@
         "laravel/tinker": "^2.8",
         "mallardduck/blade-lucide-icons": "^1.21",
         "statamic/cms": "^4.0",
+        "statamic/ssg": "^2.2",
         "stillat/antlers-components": "^2.2"
     },
     "require-dev": {
