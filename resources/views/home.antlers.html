@@ -1,9 +1,9 @@
 <!-- START: Misc Images -->
-<section>
+<section class="hidden lg:block">
     <img
         src="/assets/banner-honey-drip.png"
         alt="honey-drip"
-        class="absolute top-0 left-0 w-[15%]">
+        class="absolute left-0 top-0 w-[15%]">
     <img
         src="/assets/banner-honey-stick.png"
         alt="honey-stick"
@@ -12,24 +12,29 @@
 <!-- END: Misc Images -->
 
 <!-- START: Main Banner -->
-<div class="h-[calc(100vh-6.9rem)] align-middle flex flex-col justify-center">
+<div class="flex flex-col justify-center align-middle lg:h-[calc(100vh-6.9rem)]">
     <div class="container flex items-center justify-between">
-        <section class="max-w-[45%] w-full">
-            <h2 class="font-serif font-bold text-primary text-4xl mb-2">
+        <section class="w-full lg:max-w-[45%]">
+            <h2 class="mb-2 text-center font-serif text-2xl font-bold text-primary lg:text-left lg:text-4xl">
                 {{ subtitle }}
             </h2>
-            <h1 class="font-semibold text-5xl mb-5 leading-tight">
+            <h1 class="mb-5 text-center text-[2rem] font-semibold leading-tight lg:mb-5 lg:text-left lg:text-5xl">
                 {{ title }}
             </h1>
-            <h2 class="text-black/75 mb-8">
+            <h2 class="mx-auto mb-12 max-w-72 text-center text-black/75 lg:mx-0 lg:mb-8 lg:max-w-full lg:text-left">
                 {{ caption }}
             </h2>
 
-            <div class="flex gap-4">
-                <a href="https://wa.me/c/6282347905543" class="btn btn-primary shadow px-6">
+            <img
+                src="/assets/banner-main-product-with-label.jpg"
+                alt="banner-main-product-mobile"
+                class="mb-4 block w-full lg:hidden">
+
+            <div class="flex flex-col gap-4 lg:flex-row">
+                <a href="https://wa.me/c/6282347905543" class="btn btn-primary px-6 shadow">
                     BELI SEKARANG
                 </a>
-                <a href="https://wa.me/6282347905543?text=Hai%20Raja%20Madu%20Sulawesi" class="btn shadow px-6">
+                <a href="https://wa.me/6282347905543?text=Hai%20Raja%20Madu%20Sulawesi" class="btn px-6 shadow">
                     MENGAPA BELI MADU KAMI?
                 </a>
             </div>
@@ -37,8 +42,8 @@
 
         <img
             src="/assets/banner-main-product-with-label.jpg"
-            alt="banner-main-product"
-            class="w-[55%] transform translate-x-8">
+            alt="banner-main-product-desktop"
+            class="hidden w-[55%] translate-x-8 transform lg:block">
     </div>
 </div>
 <!-- END: Main Banner -->
@@ -47,19 +52,19 @@
 <div class="container py-16">
     {{ partial:section_title label="Jenis Madu" }}
 
-    <section class="flex justify-around">
+    <section class="flex flex-col justify-around gap-12 lg:flex-row lg:gap-0">
         {{ taxonomy:categories }}
             <figure>
-                <div class="w-72 h-72 bg-neutral-200 rounded-full overflow-hidden p-2">
+                <div class="mx-auto h-72 w-72 overflow-hidden rounded-full bg-neutral-200 p-2 lg:mx-0">
                     <img
                         src="{{ category_image }}"
                         alt="{{ category_image:alt }}"
-                        class="w-full h-full object-contain">
+                        class="h-full w-full object-contain">
                 </div>
-                <figcaption class="text-center text-lg mt-6">
+                <figcaption class="mt-6 text-center text-lg">
                     {{ title }}
                 </figcaption>
-                <a href="https://wa.me/c/6282347905543" class="underline text-xs text-center block mt-2">
+                <a href="https://wa.me/c/6282347905543" class="mt-2 block text-center text-xs underline">
                     Selengkapnya >
                 </a>
             </figure>
