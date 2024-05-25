@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "824def6dbba3cea67cdd6aab2d167a1d",
+    "content-hash": "dea295f85f5c8e11a7caa9530c389ea9",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -68,6 +68,52 @@
                 "source": "https://github.com/ajthinking/archetype/tree/v1.1.5"
             },
             "time": "2022-08-24T05:52:35+00:00"
+        },
+        {
+            "name": "alt-design/alt-seo",
+            "version": "v1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alt-design/Alt-SEO-Addon.git",
+                "reference": "39d85fe7efb00df2e2b67c7d5d2cf44079ae0ea2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alt-design/Alt-SEO-Addon/zipball/39d85fe7efb00df2e2b67c7d5d2cf44079ae0ea2",
+                "reference": "39d85fe7efb00df2e2b67c7d5d2cf44079ae0ea2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "statamic/cms": "^4.0|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Alt Seo",
+                    "description": "Alt Seo addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "AltDesign\\AltSeo\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AltDesign\\AltSeo\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Alt SEO addon, add SEO tags to your site",
+            "support": {
+                "issues": "https://github.com/alt-design/Alt-SEO-Addon/issues",
+                "source": "https://github.com/alt-design/Alt-SEO-Addon/tree/v1.1.4"
+            },
+            "time": "2024-05-15T10:58:42+00:00"
         },
         {
             "name": "blade-ui-kit/blade-icons",

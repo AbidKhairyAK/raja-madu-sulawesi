@@ -1,27 +1,30 @@
 <!doctype html>
 <html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Raja Madu Sulawesi - Madu solusi kualitas hidup anda">
-        <title>{{ title }} - {{ site:name }}</title>
-        <link rel="stylesheet" href="/fonts/fonts.css">
-        {{ vite src="resources/js/site.js|resources/css/site.css" }}
-    </head>
-    <body class="bg-white">
 
-        <!-- START: Header -->
-        {{ partial:header }}
-        <!-- END: Header -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="description" content="Raja Madu Sulawesi - Madu solusi kualitas hidup anda"> -->
+    {{ alt_seo:meta }}
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    {{ vite src="resources/js/site.js|resources/css/site.css" }}
+</head>
 
+<body class="bg-white">
 
-        <!-- START: Template Content -->
-        {{ template_content }}
-        <!-- END: Template Content -->
+    <!-- START: Header -->
+    {{ partial:header }}
+    <!-- END: Header -->
 
 
-        <!-- START: Footer -->
-        <!-- END: Footer -->
-    </body>
+    <!-- START: Template Content -->
+    {{ template_content }}
+    <!-- END: Template Content -->
+
+
+    <!-- START: Footer -->
+    <!-- END: Footer -->
+</body>
+
 </html>
