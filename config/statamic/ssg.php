@@ -41,6 +41,14 @@ return [
     'copy' => [
         public_path('build') => 'build',
         public_path('assets') => 'assets',
+        public_path('manifest.json') => 'manifest.json',
+        public_path('robots.txt') => 'robots.txt',
+        public_path('favicon.ico') => 'favicon.ico',
+        public_path('favicon-16x16.png') => 'favicon-16x16.png',
+        public_path('favicon-32x32.png') => 'favicon-32x32.png',
+        public_path('apple-touch-icon.png') => 'apple-touch-icon.png',
+        public_path('android-chrome-192x192.png') => 'android-chrome-192x192.png',
+        public_path('android-chrome-512x512.png') => 'android-chrome-512x512.png',
     ],
 
     'symlinks' => [
