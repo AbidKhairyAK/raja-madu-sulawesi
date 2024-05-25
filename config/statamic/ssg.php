@@ -41,6 +41,7 @@ return [
     'copy' => [
         public_path('build') => 'build',
         public_path('assets') => 'assets',
+        public_path('fonts') => 'fonts',
         public_path('manifest.json') => 'manifest.json',
         public_path('robots.txt') => 'robots.txt',
         public_path('favicon.ico') => 'favicon.ico',
